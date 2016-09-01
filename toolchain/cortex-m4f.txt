@@ -1,0 +1,23 @@
+[binaries]
+c = 'arm-none-eabi-gcc'
+ar = 'arm-none-eabi-ar'
+strip = 'arm-none-eabi-strip'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'x86_64'
+cpu = 'x64'
+endian = 'little'
+
+[target_machine]
+system = 'yo-kernel'
+cpu_family = 'cortex-m'
+cpu = 'cortex-m'
+endian = 'big'
+
+[properties]
+
+c_args = [
+    '-D__BYTE_ORDER=__BIG_ENDIAN',
+    '-mcpu=cortex-m4', '-mtune=cortex-m4', '-march=armv7e-m', '-mthumb',
+    '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard']

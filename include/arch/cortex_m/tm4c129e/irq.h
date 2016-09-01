@@ -1,0 +1,21 @@
+#ifndef ARCH_CORTEX_M_TM4C129X_IRQ_H
+#define ARCH_CORTEX_M_TM4C129X_IRQ_H
+
+enum IRQN {
+
+    IRQN_NMI = -14,
+    IRQN_HARD_FAULT = -13,
+    IRQN_MEM_MGT = -12,
+    IRQN_BUS_FAULT = -11,
+    IRQN_USAGE_FAULT = -10,
+    IRQN_SVCALL = -5,
+    IRQN_PENDSV = -2,
+    IRQN_SYSTICK = -1,
+
+    IRQN_UART0 = 21,
+    IRQN_UART1 = 22,
+
+    IRQN_NUM = 114
+};
+
+#endif // ARCH_CORTEX_M_TM4C129X_IRQ_H

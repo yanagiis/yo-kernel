@@ -1,0 +1,2 @@
+option('arch', type: 'combo', choices: ['cortex_m'], value: 'cortex_m')
+option('chip', type: 'combo', choices: ['tm4c129e'], value: 'tm4c129e')
