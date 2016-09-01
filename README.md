@@ -1,7 +1,11 @@
 ## yo-kernel
 
 yo is toy kernel just for practice.
-For now, this kernel is designed for cortex-m4f.
+For now, yo is designed for cortex-m4f.
+
+### Progress
+
+0.01 %
 
 ### Goals
 
