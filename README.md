@@ -19,6 +19,11 @@ For now, yo is designed for cortex-m4f.
   - Use meson build system is just for fun.
   - It's compilation is very fast!
 
+## How to build
+
+1. mkdir build
+2. meson.py --cross-file ../toolchain/cortex-m4f.txt --buildtype debug --warnlevel 3 ..
+
 ### Support
 
 1. TI tiva tm4c129x-launchpad.
